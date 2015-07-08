@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace _7_7_15_ExperIT_StringLab3_Concatenate
 {
     class Program
@@ -12,18 +13,17 @@ namespace _7_7_15_ExperIT_StringLab3_Concatenate
   static void Main(string[] args)
         {
 
+            StringBuilder newString = new System.Text.StringBuilder();
+
             for (int x = 0; x < args.Length; x++)
             {
-                Console.Write(args[x].ToUpper());
-                Console.Write(",");
+                newString.Append(args[x]);
+                newString.Append(",");
             }
 
+            Console.WriteLine(newString);
             Console.ReadLine();
         }
-   
-
-
-
    
 
 
